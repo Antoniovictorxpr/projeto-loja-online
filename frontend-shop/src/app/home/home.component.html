@@ -1,0 +1,20 @@
+<form>
+    <nav class="navbar">
+        <div class="logo" [routerLink]="['/home']">AKY PEÇAS</div>
+        <div class="buscar">
+            <p-iconField iconPosition="right">
+                <p-inputIcon styleClass="pi pi-search" />
+                <input type="text" pInputText placeholder="Òla, o que você procura? " />
+            </p-iconField>
+        </div>
+
+        <div class="icons">
+            <i class="pi-heart"></i>
+
+            <i class="pi pi-user" style="color: #4B4B4B" [routerLink]="['/login']"> </i>
+        </div>
+
+
+
+    </nav>
+</form>

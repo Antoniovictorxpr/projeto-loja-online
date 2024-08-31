@@ -1,0 +1,26 @@
+<div class="card-login-parent"  >
+  <div class="card-login">
+    <p-card header="Login">
+      <form (ngSubmit)="onSubmit()">
+        <p-floatLabel>
+          <input pInputText id="username" [(ngModel)]="username" name="username" required>
+          <label for="username">E-mail ou CPF/CNPJ</label>
+        </p-floatLabel>
+          <br>
+        <p-floatLabel>
+          <input pInputText  type="password" id="password" [(ngModel)]="password" name="password" required>
+          <label for="password">Senha</label>
+        </p-floatLabel>
+          <br>
+          <h2> <a [routerLink]="['/cadastrar']" > Não tem uma conta? Cadastre-se</a></h2>
+          <br>
+          <br>
+        <button pButton type="submit">Continuar</button>
+
+        <h4>  <a [routerLink]="['/home']" > Voltar para tela Principal</a></h4>
+      </form>
+    </p-card>
+
+  </div>
+    
+  </div>

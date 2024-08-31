@@ -1,0 +1,101 @@
+
+@import "primeicons/primeicons.css";
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFD700; 
+    padding: 10px 20px;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Para garantir que a barra fique acima de outros elementos */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.buscar {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    margin: 0 auto; /* Centraliza a barra de busca */
+}
+
+.buscar input {
+    width:600px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.pi-user:before {
+    display: flex;
+    justify-content: right;
+    position: absolute; /* Define a posição absoluta */
+    right: 100px; /* Ajusta a distância da borda direita */
+    top: 38px; /* Ajusta a distância da borda superior */
+    font-size: 1.5rem;
+}
+
+.pi-apple:before {
+    content: "\f004";
+
+}
+
+.navicon {
+    display: flex;
+    gap: 20px;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .buscar {
+        width: 90%; /* Ajusta a largura no mobile */
+        margin: 10px 0;
+    }
+
+    .buscar input {
+        width:320px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .pi-user:before {
+        right: 10px; /* Ajusta a distância da borda direita para telas menores */
+        top: 10px; /* Ajusta a distância da borda superior para telas menores */
+    }
+}
+
+@media (min-width: 769px) {
+    .buscar {
+        max-width: 1000px; /* Aumenta a largura máxima no desktop */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .buscar input {
+        padding: 8px;
+    }
+
+    .pi-user:before {
+        font-size: 1.2rem;
+    }
+}
