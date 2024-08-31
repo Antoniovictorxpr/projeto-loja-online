@@ -9,7 +9,7 @@ import { routes } from './app-routing.module';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { FloatLabelModule } from 'primeng/floatlabel';
-import { CadastrarComponent } from './cadastrar/cadastrar.component';
+import { CadastrarUsuarioComponent } from './cadastrar-usuario/cadastrar-usuario.component';
 import { CalendarModule } from 'primeng/calendar';
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { PasswordModule } from 'primeng/password';
@@ -19,6 +19,8 @@ import { AutoCompleteModule } from 'primeng/autocomplete';
 import { IconFieldModule } from 'primeng/iconfield';
 import { InputIconModule } from 'primeng/inputicon';
 import { InputTextModule } from 'primeng/inputtext';
+import { FormularioPessoaFisicaComponent } from './cadastrar-usuario/formulario-pessoa-fisica/formulario-pessoa-fisica.component';
+import { FormularioPessoaJuridicaComponent } from './cadastrar-usuario/formulario-pessoa-juridica/formulario-pessoa-juridica.component';
 
 
 
@@ -26,7 +28,9 @@ import { InputTextModule } from 'primeng/inputtext';
   declarations: [
     AppComponent,
     LoginComponent,
-    CadastrarComponent,
+    CadastrarUsuarioComponent,
+    FormularioPessoaFisicaComponent,
+    FormularioPessoaJuridicaComponent,
   ],
   imports: [
     BrowserModule,

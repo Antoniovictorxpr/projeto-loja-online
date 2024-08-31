@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-cadastrar',
-  templateUrl: './cadastrar.component.html',
-  styleUrl: './cadastrar.component.scss'
+  selector: 'app-cadastrar-usuario',
+  templateUrl: './cadastrar-usuario.component.html',
+  styleUrl: './cadastrar-usuario.component.scss'
 })
-export class CadastrarComponent {
+export class CadastrarUsuarioComponent {
   email: string = '';
   nome: string = '';
   sobrenome: string = '';

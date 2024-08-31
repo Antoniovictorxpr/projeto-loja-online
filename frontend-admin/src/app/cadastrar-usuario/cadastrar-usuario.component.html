@@ -1,0 +1,44 @@
+<div class="form-container">
+  <div>
+    <h2>Criar uma conta</h2>
+  </div>
+
+  <div class="flex flex-wrap gap-3">
+    <div class="flex align-items-center">
+      <p-radioButton name="accountType" value="fisica" [(ngModel)]="tipoPessoa" inputId="fisica" (onClick)="selecionarTipo('fisica')" />
+      <label for="fisica" class="ml-2"> Pessoa física</label>
+    </div>
+
+    <div class="flex align-items-center">
+      <p-radioButton name="accountType" value="juridica" [(ngModel)]="tipoPessoa" inputId="juridica" (onClick)="selecionarTipo('juridica')" />
+      <label for="juridica" class="ml-2"> Pessoa jurídica</label>
+    </div>
+  </div>
+
+  <form>
+    <div [ngSwitch]="tipoPessoa">
+      <div class="card-cadastrar">
+
+        <div *ngSwitchCase="'fisica'">
+          <app-formulario-pessoa-fisica></app-formulario-pessoa-fisica>
+        </div>
+       
+
+          <!-- Div pessoa juridica start  -->
+
+        <div *ngSwitchCase="'juridica'">
+          <app-formulario-pessoa-juridica></app-formulario-pessoa-juridica>
+        </div>
+
+        <p-checkbox [(ngModel)]="notificacao" label="Inscreva-se para receber novidades e promoções da AKY PEÇA" name="notificacao" value="notificacao" />
+
+        <div class="butao">
+          <button pButton type="submit">Continuar</button>
+        </div>
+           
+        <h4>  <a [routerLink]="['/login']" > Voltar para o Login</a></h4>
+         
+      </div>
+    </div>
+  </form>
+</div>
