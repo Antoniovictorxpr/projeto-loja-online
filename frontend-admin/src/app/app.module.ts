@@ -21,6 +21,16 @@ import { InputIconModule } from 'primeng/inputicon';
 import { InputTextModule } from 'primeng/inputtext';
 import { FormularioPessoaFisicaComponent } from './cadastrar-usuario/formulario-pessoa-fisica/formulario-pessoa-fisica.component';
 import { FormularioPessoaJuridicaComponent } from './cadastrar-usuario/formulario-pessoa-juridica/formulario-pessoa-juridica.component';
+import { CadastrarProdutoComponent } from './produtos/cadastrar-produto/cadastrar-produto.component';
+import { ListarProdutosComponent } from './produtos/listar-produtos/listar-produtos.component';
+import { FiltroProdutosComponent } from './produtos/listar-produtos/filtro-produtos/filtro-produtos.component';
+import { TabelaProdutosComponent } from './produtos/listar-produtos/tabela-produtos/tabela-produtos.component';
+import { MultiSelectModule } from 'primeng/multiselect';
+import { DividerModule } from 'primeng/divider';
+import { TableModule } from 'primeng/table';
+import { TagModule } from 'primeng/tag';
+import { StyleClassModule } from 'primeng/styleclass';
+import { ImageModule } from 'primeng/image';
 
 
 
@@ -31,6 +41,10 @@ import { FormularioPessoaJuridicaComponent } from './cadastrar-usuario/formulari
     CadastrarUsuarioComponent,
     FormularioPessoaFisicaComponent,
     FormularioPessoaJuridicaComponent,
+    CadastrarProdutoComponent,
+    ListarProdutosComponent,
+    FiltroProdutosComponent,
+    TabelaProdutosComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,7 +64,13 @@ import { FormularioPessoaJuridicaComponent } from './cadastrar-usuario/formulari
     CheckboxModule,
     AutoCompleteModule,
     IconFieldModule,
-    InputIconModule
+    InputIconModule,
+    MultiSelectModule,
+    DividerModule,
+    TableModule,
+    TagModule,
+    StyleClassModule,
+    ImageModule
 
   ],
   providers: [],

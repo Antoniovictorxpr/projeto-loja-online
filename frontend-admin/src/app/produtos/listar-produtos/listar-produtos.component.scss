@@ -1,0 +1,10 @@
+.button-listar-produtos {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-bottom: 50px;
+
+    p-button:first-child {
+        margin-right: 20px;
+    }
+}

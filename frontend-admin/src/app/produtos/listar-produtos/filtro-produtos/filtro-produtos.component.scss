@@ -1,0 +1,28 @@
+.campo-filtro {
+    display: flex;
+    flex-direction: row;
+
+    p-floatLabel:not(:last-child) {
+        margin-right: 50px;
+    }
+
+    .tipo-produtos {
+        width: 250px;
+
+        span p-multiselect {
+            width: 250px !important;
+            div.p-component.p-inputwrapper.p-multiselect {
+                width: 250px !important;
+            }
+        }
+    }
+
+}
+::ng-deep{
+    .p-multiselect {
+        width: 250px !important;
+    }
+}
+
+
+
