@@ -1,14 +1,14 @@
 export interface TipoProduto {
     nome: string;
     codigo: number;
-    
+
 }
 
 export enum Situacao {
-   PUBLICADO = 'PUBLICADO',
-   SUSPENSO = 'SUSPENSO',
+    PUBLICADO = 'PUBLICADO',
+    SUSPENSO = 'SUSPENSO',
 
-    
+
 }
 
 export interface Produto {
@@ -19,6 +19,4 @@ export interface Produto {
     quantidade: number;
     tipo: TipoProduto;
     situacao: Situacao;
-    
-    
 }

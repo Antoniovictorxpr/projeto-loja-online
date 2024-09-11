@@ -31,6 +31,7 @@ import { TableModule } from 'primeng/table';
 import { TagModule } from 'primeng/tag';
 import { StyleClassModule } from 'primeng/styleclass';
 import { ImageModule } from 'primeng/image';
+import { ToastModule } from 'primeng/toast';
 
 
 
@@ -70,7 +71,8 @@ import { ImageModule } from 'primeng/image';
     TableModule,
     TagModule,
     StyleClassModule,
-    ImageModule
+    ImageModule,
+    ToastModule
 
   ],
   providers: [],
