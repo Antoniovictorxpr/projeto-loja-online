@@ -1,0 +1,80 @@
+<div class="cadastro-nome-produto grid">
+  <div class="col-5">
+    <p-floatLabel>
+      <input class="width-100" id="nome" type="text" pInputText [(ngModel)]="produto.nome" />
+      <label for="username">Nome do Produto</label>
+    </p-floatLabel>
+  </div>
+
+  <div class=" col-3">
+    <p-floatLabel>
+      <input class="width-100" id="codigo" type="text" pInputText [(ngModel)]="produto.codigo" />
+      <label for="username">Codigo do Produto</label>
+    </p-floatLabel>
+
+  </div>
+  <div class="col-3">
+
+    <p-floatLabel>
+      <input class="width-100" id="preco" type="text" pInputText [(ngModel)]="produto.preco" />
+      <label for="username">Preço Pago no Produto</label>
+    </p-floatLabel>
+  </div>
+
+</div>
+
+<div class="cadastro-nome-preco grid">
+  <div class="col-2">
+    <p-floatLabel>
+      <input class="width-100" id="precoFinal" type="text" pInputText [(ngModel)]="produto.precoFinal" />
+      <label for="username">Preço Final</label>
+    </p-floatLabel>
+  </div>
+
+  <div class="col-2">
+    <p-floatLabel>
+      <input class="width-100" id="nome" type="text" pInputText [(ngModel)]="produto.nome" />
+      <label for="username">Quantidade</label>
+    </p-floatLabel>
+  </div>
+
+  <div class="col-2">
+    <p-floatLabel class="tipo-produtos">
+      <p-multiSelect class="tipo-produtos" inputId="float-label" [options]="tiposProdutos"
+        [(ngModel)]="tiposProdutosSelected" optionLabel="nome" />
+      <label for="float-label">Unidade</label>
+    </p-floatLabel>
+  </div>
+
+  <div class="col-2">
+    <p-floatLabel class="tipo-produtos">
+      <p-multiSelect class="tipo-produtos" inputId="float-label" [options]="tiposProdutos"
+        [(ngModel)]="tiposProdutosSelected" optionLabel="nome" />
+      <label for="float-label">Tipo do Produto</label>
+    </p-floatLabel>
+  </div>
+
+  <div class="col-2">
+    <p-floatLabel class="tipo-produtos">
+      <p-multiSelect class="tipo-produtos" inputId="float-label" [options]="tiposProdutos"
+        [(ngModel)]="tiposProdutosSelected" optionLabel="nome" />
+      <label for="float-label">Condição</label>
+    </p-floatLabel>
+  </div>
+</div>
+
+
+<div class="cadastro-descricao grid">
+  <p-floatLabel>
+    <textarea id="descricao" class="descri" rows="7" cols="109" pInputTextarea [(ngModel)]="descricao"
+      autoResize="true"></textarea>
+    <label> Descrição</label>
+  </p-floatLabel>
+</div>
+
+<div class="cadastro-botoes">
+  <p-button label="Voltar" [raised]="true" severity="danger" />
+
+  <p-button label="Avançar" [raised]="true" severity="contrast" />
+
+</div>

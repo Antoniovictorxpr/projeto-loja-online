@@ -1,0 +1,34 @@
+<div>
+  <h1>Cadastro de Produtos</h1>
+  <p-divider class="p-divider1" />
+</div>
+<div class="div-principal">
+  <p-card class="card-cadastrar">
+    <h2>Cadastro do Produto</h2>
+    <div class="conteudo-card">
+      <form [formGroup]="formGroup">
+        <div *ngFor="let category of categories" class="div-radion-button">
+          <p-radioButton [inputId]="category.key" [value]="category" formControlName="categoryControl"
+            (onClick)="selecionarTipo(category.key)" />
+          <label [for]="category.key">
+            {{ category.name }}
+          </label>
+        </div>
+      </form>
+    </div>
+  </p-card>
+    <div [ngSwitch]="tipoFormulario" class="div-formularios">
+        <div *ngSwitchCase="'dados-basicos'">
+          <app-form-dados-basicos></app-form-dados-basicos>
+        </div>
+
+        <div *ngSwitchCase="'caracteristicas'" class="form">
+          <app-form-caracteristicas></app-form-caracteristicas>
+        </div>
+
+        <div *ngSwitchCase="'imagens'" class="form">
+          <app-form-imagens></app-form-imagens>
+        </div>
+
+    </div>
+</div>

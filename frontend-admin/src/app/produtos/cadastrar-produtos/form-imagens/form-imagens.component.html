@@ -1,0 +1,41 @@
+<h2 class="textodapagina">Imagens</h2>
+
+<div class="card-image">
+    <h4>Imagem principal do produto</h4>
+    <p-image 
+        class="container-image"
+        [src]="uploadedImageUrl"
+        alt="Image" 
+        width="60"
+        height="60" />
+</div>
+
+<div class="conteudo-card">
+    <h3>Arraste o arquivo para cá ou se preferir</h3>
+    <div
+      class="dropzone"
+      (dragover)="onDragOver($event)"
+      (dragleave)="onDragLeave($event)"
+      (drop)="onDrop($event)"
+    >
+    <p-fileUpload
+    #fileUpload
+    mode="basic"
+    class="updearquivobt"
+    chooseLabel="Anexar o Arquivo"
+    chooseIcon="pi pi-upload"
+    name="imagens[]"
+    accept="image/*"
+    maxFileSize="1000000"
+    [customUpload]="true"
+    styleClass="p-button-contrast"
+  >
+  </p-fileUpload>
+  
+    </div>
+</div>
+
+<div class="cadastro-botoes">
+    <p-button label="Voltar" [raised]="true" styleClass="p-button-danger"></p-button>
+    <p-button label="Avançar" [raised]="true" styleClass="p-button-contrast"></p-button>
+</div>

@@ -24,6 +24,7 @@ export class TabelaProdutosComponent {
       quantidade: 8,
       preco: 'R$ 415,90',
       situacao: Situacao.PUBLICADO,
+      precoFinal: '',
     },
 
     {
@@ -33,6 +34,7 @@ export class TabelaProdutosComponent {
       tipo: { nome: 'Peça de Carro', codigo: 1 },
       quantidade: 30,
       preco: 'R$ 79,90',
+      precoFinal: '',
       situacao: Situacao.SUSPENSO,
     },
 
@@ -42,7 +44,8 @@ export class TabelaProdutosComponent {
       nome: 'Caixa Direção Hidráulica Ford Ecosport Fiesta 2002 a 2014 Sem Terminal ',
       tipo: { nome: 'Peça de Carro', codigo: 1 },
       quantidade: 2,
-      preco: 'R$ 2,899,90',
+      preco: 'R$ 899,90',
+      precoFinal: '',
       situacao: Situacao.PUBLICADO,
     },
 
@@ -53,6 +56,7 @@ export class TabelaProdutosComponent {
       tipo: { nome: 'Peça de Carro', codigo: 1 },
       quantidade: 9,
       preco: 'R$ 225,90',
+      precoFinal: '',
       situacao: Situacao.PUBLICADO,
     },
 
@@ -63,6 +67,7 @@ export class TabelaProdutosComponent {
       tipo: { nome: 'Peça de Carro', codigo: 1 },
       quantidade: 12,
       preco: 'R$ 220,30',
+      precoFinal: '',
       situacao: Situacao.PUBLICADO,
     },
 
@@ -73,6 +78,7 @@ export class TabelaProdutosComponent {
       tipo: { nome: 'Peça de Carro', codigo: 1 },
       quantidade: 12,
       preco: 'R$ 243,10',
+      precoFinal: '',
       situacao: Situacao.PUBLICADO,
     },
 
@@ -83,6 +89,7 @@ export class TabelaProdutosComponent {
       tipo: { nome: 'Peça de Carro', codigo: 1 },
       quantidade: 12,
       preco: 'R$ 251,60',
+      precoFinal: '',
       situacao: Situacao.PUBLICADO,
     },
 
@@ -93,6 +100,7 @@ export class TabelaProdutosComponent {
       tipo: { nome: 'Peça de Carro', codigo: 1 },
       quantidade: 13,
       preco: 'R$ 220,30',
+      precoFinal: '',
       situacao: Situacao.PUBLICADO,
     },
 
@@ -103,6 +111,7 @@ export class TabelaProdutosComponent {
       tipo: { nome: 'Peça de Carro', codigo: 1 },
       quantidade: 20,
       preco: 'R$ 33,30',
+      precoFinal: '',
       situacao: Situacao.PUBLICADO,
     },
 
@@ -113,6 +122,7 @@ export class TabelaProdutosComponent {
       tipo: { nome: 'Peça de Carro', codigo: 1 },
       quantidade: 12,
       preco: 'R$ 44,40',
+      precoFinal: '',
       situacao: Situacao.PUBLICADO,
     },
 
@@ -123,6 +133,7 @@ export class TabelaProdutosComponent {
       tipo: { nome: 'Peça de Carro', codigo: 1 },
       quantidade: 12,
       preco: 'R$ 190,35',
+      precoFinal: '',
       situacao: Situacao.PUBLICADO,
     },
 
@@ -133,6 +144,7 @@ export class TabelaProdutosComponent {
       tipo: { nome: 'Peça de Carro', codigo: 1 },
       quantidade: 12,
       preco: 'R$ 39,56',
+      precoFinal: '',
       situacao: Situacao.PUBLICADO,
     },
 

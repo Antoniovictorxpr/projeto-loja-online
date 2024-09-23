@@ -21,7 +21,6 @@ import { InputIconModule } from 'primeng/inputicon';
 import { InputTextModule } from 'primeng/inputtext';
 import { FormularioPessoaFisicaComponent } from './cadastrar-usuario/formulario-pessoa-fisica/formulario-pessoa-fisica.component';
 import { FormularioPessoaJuridicaComponent } from './cadastrar-usuario/formulario-pessoa-juridica/formulario-pessoa-juridica.component';
-import { CadastrarProdutoComponent } from './produtos/cadastrar-produto/cadastrar-produto.component';
 import { ListarProdutosComponent } from './produtos/listar-produtos/listar-produtos.component';
 import { FiltroProdutosComponent } from './produtos/listar-produtos/filtro-produtos/filtro-produtos.component';
 import { TabelaProdutosComponent } from './produtos/listar-produtos/tabela-produtos/tabela-produtos.component';
@@ -32,6 +31,23 @@ import { TagModule } from 'primeng/tag';
 import { StyleClassModule } from 'primeng/styleclass';
 import { ImageModule } from 'primeng/image';
 import { ToastModule } from 'primeng/toast';
+import { MenuItem } from 'primeng/api';
+import { ToolbarModule } from 'primeng/toolbar';
+import { DropdownModule } from 'primeng/dropdown';
+import { PanelModule } from 'primeng/panel';
+import { ReactiveFormsModule } from '@angular/forms';
+import { CadastrarProdutosComponent } from './produtos/cadastrar-produtos/cadastrar-produtos.component';
+import { FormDadosBasicosComponent } from './produtos/cadastrar-produtos/form-dados-basicos/form-dados-basicos.component';
+import { FormCaracteristicasComponent } from './produtos/cadastrar-produtos/form-caracteristicas/form-caracteristicas.component';
+import { FormImagensComponent } from './produtos/cadastrar-produtos/form-imagens/form-imagens.component';
+import { FormEstoqueComponent } from './produtos/cadastrar-produtos/form-estoque/form-estoque.component';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import { FileUploadModule } from 'primeng/fileupload';
+import { HttpClientModule } from '@angular/common/http';
+import { GalleriaModule } from 'primeng/galleria';
+
+
+
 
 
 
@@ -42,10 +58,14 @@ import { ToastModule } from 'primeng/toast';
     CadastrarUsuarioComponent,
     FormularioPessoaFisicaComponent,
     FormularioPessoaJuridicaComponent,
-    CadastrarProdutoComponent,
     ListarProdutosComponent,
     FiltroProdutosComponent,
     TabelaProdutosComponent,
+    CadastrarProdutosComponent,
+    FormDadosBasicosComponent,
+    FormCaracteristicasComponent,
+    FormImagensComponent,
+    FormEstoqueComponent,
   ],
   imports: [
     BrowserModule,
@@ -72,7 +92,18 @@ import { ToastModule } from 'primeng/toast';
     TagModule,
     StyleClassModule,
     ImageModule,
-    ToastModule
+    ToastModule,
+    ToolbarModule,
+    DropdownModule,
+    PanelModule,
+    ReactiveFormsModule,
+    InputTextareaModule,
+    FileUploadModule,
+    HttpClientModule,
+    GalleriaModule
+    
+
+    
 
   ],
   providers: [],
