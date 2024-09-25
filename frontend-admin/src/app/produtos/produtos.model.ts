@@ -12,7 +12,7 @@ export enum Situacao {
 }
 
 export interface Produto {
-    preco: string;
+    preco?: string;
     codigo?: number;
     codRefProduto: string;
     nome: string;
@@ -36,5 +36,16 @@ export interface Produto {
     altura?: number;
     profundidade?: number;
     volumes?: number;
+    minimo?: number;
+    maximo?: number;
+    staprodutos?: string;
+    armazemlocalarmazenamento?: string;
+    posiestoque?: string;
+    entrada?: Date;
+    quantidademovi?: number;
+    operadorrespon?: string;
+    numnotafiscal?: number;
+    numpedido?: number;
+
 
 }

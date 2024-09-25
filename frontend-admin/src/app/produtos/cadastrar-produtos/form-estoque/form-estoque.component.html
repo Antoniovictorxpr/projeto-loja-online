@@ -1,1 +1,84 @@
-<p>form-estoque works!</p>
+<h2 class="textodapagina">Estoque</h2>
+
+<div class="cadastro-estoque-produto grid">
+  <div class="col-3">
+    <p-floatLabel>
+      <input class="width-100" id="Minimo" type="text" pInputText [(ngModel)]="produto.minimo" />
+      <label for="username">Minimo</label>
+    </p-floatLabel>
+  </div>
+
+  <div class=" col-3">
+    <p-floatLabel>
+      <input class="width-100" id="maximo" type="text" pInputText [(ngModel)]="produto.maximo" />
+      <label for="username">Máximo</label>
+    </p-floatLabel>
+  </div>
+
+  <div class="col-3">
+    <p-floatLabel>
+      <input class="width-100" id="staprodutos" type="text" pInputText [(ngModel)]="produto.staprodutos" />
+      <label for="username">Status do produto</label>
+    </p-floatLabel>
+  </div>
+
+  <div class=" col-3">
+    <p-floatLabel>
+      <input class="width-100" id="armazemlocalarmazenamento" type="text" pInputText [(ngModel)]="produto.armazemlocalarmazenamento" />
+      <label for="username">Local de Armazenamento</label>
+    </p-floatLabel>
+  </div>
+
+  <div class="cadastro-estoque-produto-posi ">
+    <p-floatLabel>
+      <input class="width-100" id=" posiestoque" type="text" pInputText [(ngModel)]="produto.posiestoque" />
+      <label for="username">Posição no Estoque</label>
+    </p-floatLabel>
+  </div>
+
+  <div class="textodois">
+    <h2 class="textodapagina">Histórico de Movimentação</h2>
+  </div>
+
+  <div class="cadastro-estoque-produto grid">
+    <div class="col-3">
+      <p-floatLabel>
+        <p-calendar [(ngModel)]="produto.entrada" [showIcon]="true" [showOnFocus]="false" inputId="buttondisplay" />
+        <label for="entrada">Entrada</label>
+      </p-floatLabel>
+    </div>
+
+    <div class=" col-3">
+      <p-floatLabel>
+        <input class="width-100" id="quantidademovi" type="text" pInputText [(ngModel)]="produto.quantidademovi" />
+        <label for="quantidademovi">Quantidade Movimentada</label>
+      </p-floatLabel>
+    </div>
+
+    <div class="col-3">
+      <p-floatLabel>
+        <input class="width-100" id="operadorrespon" type="text" pInputText [(ngModel)]="produto.operadorrespon" />
+        <label for="username">Operador Responsável</label>
+      </p-floatLabel>
+    </div>
+
+    <div class=" col-3">
+      <p-floatLabel>
+        <input class="width-100" id="numnotafiscal" type="text" pInputText [(ngModel)]="produto.numnotafiscal" />
+        <label for="username">Número da Nota Fiscal</label>
+      </p-floatLabel>
+    </div>
+
+    <div class="cadastro-estoque-produto-posi ">
+      <p-floatLabel>
+        <input class="width-100" id="numpedido" type="text" pInputText [(ngModel)]="produto.numpedido" />
+        <label for="username">Número de Pedido</label>
+      </p-floatLabel>
+    </div>
+
+    <div class="cadastro-botoes">
+      <p-button label="Voltar" [raised]="true" severity="danger" />
+
+      <p-button label="Avançar" [raised]="true" severity="contrast" />
+
+    </div>

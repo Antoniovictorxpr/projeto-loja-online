@@ -1,0 +1,62 @@
+.cadastro-estoque-produto {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    justify-content: space-around;
+    width: 100%;
+    margin: 10px;
+}
+
+.cadastro-estoque-produto-posi {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 8px;
+    margin-top: 12px;
+}
+
+
+
+.textodapagina {
+    display: flex;
+    margin: 15px !important;
+    font-size: 1.2rem;
+    color: #3E3E3E;
+}
+
+.textodois {
+    display: flex;
+    margin: 15px !important;
+    font-size: 1.2rem;
+    color: #3E3E3E;
+
+}
+
+.cadastro-botoes {
+    display: flex;
+    flex-direction: row;
+    margin-right: 1px;
+    margin-top: 70px;
+
+    p-button:first-child {
+        margin-right: 850px;
+    }
+}
+
+
+
+.campo-preco-final {
+    width: 50%;
+}
+
+.campo-nome-produto {
+    width: 60%;
+}
+
+.campo-codigo-do-produto {
+    width: 25%;
+}
+
+.campo-preco-pago-produto {
+    width: 15%;
+}
