@@ -1,0 +1,51 @@
+export interface TipoProduto {
+    nome: string;
+    codigo?: number;
+
+}
+
+export enum Situacao {
+    PUBLICADO = 'PUBLICADO',
+    SUSPENSO = 'SUSPENSO',
+
+
+}
+
+export interface Produto {
+    preco?: string;
+    codigo?: number;
+    codRefProduto: string;
+    nome: string;
+    quantidade: number;
+    tipo: TipoProduto;
+    situacao: Situacao;
+    marca?: string;
+    precoFinal?: string;
+    kiloGrama?: number;
+    peca?: number;
+    unidade?: number;
+    grama?: number;
+    descricao?: string;
+    peso?: number;
+    material?: number;
+    tamanhoDisponivel?: string;
+    cor?: string;
+    pesoLiquido?: number;
+    pesoBruto?: number;
+    largura?: number;
+    altura?: number;
+    profundidade?: number;
+    volumes?: number;
+    minimo?: number;
+    maximo?: number;
+    staprodutos?: string;
+    armazemlocalarmazenamento?: string;
+    posiestoque?: string;
+    entrada?: Date;
+    quantidademovi?: number;
+    operadorrespon?: string;
+    numnotafiscal?: number;
+    numpedido?: number;
+
+
+}

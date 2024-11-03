@@ -1,0 +1,109 @@
+<h2 class="textodapagina">Caracteristicas</h2>
+
+
+<div class="cadastro-nome-produto grid">
+  <div class="col-3">
+    <p-floatLabel>
+      <input class="width-100" id="marca" type="text" pInputText [(ngModel)]="produto.marca" />
+      <label for="username">Marca</label>
+    </p-floatLabel>
+  </div>
+
+  <div class=" col-3">
+    <p-floatLabel>
+      <input class="width-100" id="peso" type="text" pInputText [(ngModel)]="produto.peso" />
+      <label for="username">Peso</label>
+    </p-floatLabel>
+
+  </div>
+  <div class="col-3">
+
+    <p-floatLabel>
+      <input class="width-100" id="material" type="text" pInputText [(ngModel)]="produto.material" />
+      <label for="username">Material</label>
+    </p-floatLabel>
+  </div>
+
+  <div class="col-3">
+
+    <p-floatLabel>
+      <input class="width-100" id="tamanhoDisponivel" type="text" pInputText [(ngModel)]="produto.tamanhoDisponivel" />
+      <label for="username">Tamanho Disponíveis</label>
+    </p-floatLabel>
+  </div>
+
+</div>
+
+
+
+<div class="cadastro-nome-produto-caracteristica grid">
+  <div class="col-3">
+    <p-floatLabel>
+      <input class="width-100" id="cor" type="text" pInputText [(ngModel)]="produto.cor" />
+      <label for="username">Cor</label>
+    </p-floatLabel>
+  </div>
+
+  <div class=" col-3">
+    <p-floatLabel>
+      <input class="width-100" id="cor" type="text" pInputText [(ngModel)]="produto.cor" />
+      <label for="username">Peso Líquido</label>
+    </p-floatLabel>
+
+  </div>
+  <div class="col-3">
+
+    <p-floatLabel>
+      <input class="width-100" id="pesoBruto" type="text" pInputText [(ngModel)]="produto.pesoBruto" />
+      <label for="username">Peso Bruto</label>
+    </p-floatLabel>
+  </div>
+
+  <div class="col-3">
+
+    <p-floatLabel>
+      <input class="width-100" id="Volumes" type="text" pInputText [(ngModel)]="produto.volumes" />
+      <label for="username">Volumes</label>
+    </p-floatLabel>
+  </div>
+
+</div>
+
+
+
+
+
+<div class="cadastro-nome-produto-caracteristica-altura grid">
+  <div class="col-3">
+    <p-floatLabel>
+      <input class="width-100" id="largura" type="text" pInputText [(ngModel)]="produto.largura" />
+      <label for="username">Largura</label>
+    </p-floatLabel>
+  </div>
+
+  <div class=" col-3">
+    <p-floatLabel>
+      <input class="width-100" id="altura" type="text" pInputText [(ngModel)]="produto.altura" />
+      <label for="username">Altura</label>
+    </p-floatLabel>
+
+  </div>
+  <div class="col-3">
+
+    <p-floatLabel>
+      <input class="width-100" id="profundidade" type="text" pInputText [(ngModel)]="produto.profundidade" />
+      <label for="username">Profundidade</label>
+    </p-floatLabel>
+  </div>
+
+ 
+</div>
+
+
+
+<div class="cadastro-botoes">
+  <p-button label="Voltar" [raised]="true" severity="danger" />
+
+  <p-button label="Avançar" [raised]="true" severity="contrast" />
+
+</div>

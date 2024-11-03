@@ -1,0 +1,29 @@
+
+<div class="campo-filtro flex">
+<p-floatLabel>
+    <input id="codigo" type="text" pInputText [(ngModel)]="codigo" />
+    <label for="codigo">Codigo</label>
+</p-floatLabel>
+
+<p-floatLabel>
+    <input id="codrefproduto" type="text" pInputText [(ngModel)]="codrefProduto" />
+    <label for="codrefproduto">Cod.Ref.Produto</label>
+</p-floatLabel>
+
+<p-floatLabel>
+    <input id="nome" type="text" pInputText [(ngModel)]="nome" />
+    <label for="nome">Nome</label>
+</p-floatLabel>
+
+<p-floatLabel class="tipo-produtos">
+    <p-multiSelect 
+    class="tipo-produtos"
+        inputId="float-label" 
+        [options]="tiposProdutos" 
+        [(ngModel)]="tiposProdutosSelected" 
+        optionLabel="nome" />
+    <label for="float-label">Tipo De Produtos</label>
+</p-floatLabel>
+
+
+</div>
