@@ -43,8 +43,8 @@ import { FormImagensComponent } from './produtos/cadastrar-produtos/form-imagens
 import { FormEstoqueComponent } from './produtos/cadastrar-produtos/form-estoque/form-estoque.component';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { FileUploadModule } from 'primeng/fileupload';
-import { HttpClientModule } from '@angular/common/http';
 import { GalleriaModule } from 'primeng/galleria';
+import { provideHttpClient } from '@angular/common/http';
 
 
 
@@ -99,14 +99,13 @@ import { GalleriaModule } from 'primeng/galleria';
     ReactiveFormsModule,
     InputTextareaModule,
     FileUploadModule,
-    HttpClientModule,
     GalleriaModule
     
 
     
 
   ],
-  providers: [],
+  providers: [provideHttpClient()],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

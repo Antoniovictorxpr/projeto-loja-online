@@ -13,7 +13,7 @@ CREATE TABLE produto (
     nome VARCHAR(200) NOT NULL,
     preco_pago NUMERIC NOT NULL,
     preco_final NUMERIC,
-    quantidade NUMERIC NOT NULL,
+    quantidade INT NOT NULL,
     unidade INT,
     tipo_produto INT,
     condicao INT,
